@@ -17,4 +17,4 @@ It showcases my skills, projects, and ways to connect with me.
 ---
 
 ## 📸 Preview
-![Portfolio Preview](pics/Screenshot%202025-09-10%20at%2021.51.19.png)
+![Portfolio Preview](pics/Screenshot%202025-09-10%20at%2021.51.19.png)](https://github.io/Medoss22/Portfolio-)
