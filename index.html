@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mohamed — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Portfolio of Mohamed — web developer and computer science student">
+  <link rel="stylesheet" href="style/style.css">
+  
+</head>
+<body>
+  <div class="site-wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">MM</div>
+        <div>
+          <h1>Mohamed</h1>
+          <div style="font-size:12px;color:var(--muted)">Computer Science student</div>
+        </div>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" class="btn-ghost toggle" aria-pressed="false" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero-inner">
+          <p style="font-weight:600;color:var(--muted)">"Design is not just what it looks like and feels like. Design is how it works." — Steve Jobs</p>
+          <h2>Hi — I'm Mohamed. I build clean, useful web apps and interfaces.</h2>
+          <p>I'm a Computer Science student at EMSI with a passion for AI, development, and security. Skilled in C, Python, JavaScript, HTML, and CSS, I enjoy creative teamwork and aim to grow as a software engineer.</p>
+          <div class="ctas">
+            <a class="primary" href="#projects">See projects</a>
+            <button class="btn-ghost" id="download-cv" title="Download CV">Download CV</button>
+          </div>
+          <div style="margin-top:8px;display:flex;gap:8px;align-items:center">
+            <a href="https://github.com/Medoss22" aria-label="GitHub link" title="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6 0.65 4.82 1 4.82 1A5.07 5.07 0 0 0 4 4.77c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9.5 18.13V22"></path></svg>
+            </a>
+            <a href="linkedin.com/in/abdechchafik-mohamed-930a25278" aria-label="LinkedIn link" title="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-6a2 2 0 0 0-2-2 2 2 0 0 0-2 2v6h-4v-13h4v2"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+
+        <aside class="card" aria-hidden="false">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:12px">
+            <div class="avatar" style="background:linear-gradient(135deg,#1e293b,#334155);">MM</div>
+            <div style="text-align:center">
+              <div style="font-weight:700">Mohamed</div>
+              <div style="font-size:13px;color:var(--muted)">Computer Science • EMSI</div>
+            </div>
+            <div style="display:flex;gap:8px;margin-top:6px">
+              <button class="small-btn" id="copy-email">Copy email</button>
+              <a class="small-btn" href="mailto:Mohamed.Abdechchfik@emsi-edu.ma">Email me</a>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about">
+        <div class="card">
+  <h3>About me</h3>
+        <div class="about-grid">
+          <div>
+            <p style="color:var(--muted)">
+              I'm a Computer Science student at EMSI with a passion for AI, development, and security. 
+              Skilled in C, Python, JavaScript, HTML, and CSS, I enjoy creative teamwork and aim to grow 
+              as a software engineer.
+            </p>
+          </div>
+          <div>
+            <div style="font-weight:700;margin-bottom:6px">Skills</div>
+            <div class="skills">
+              <div class="skill">C</div>
+              <div class="skill">Python</div>
+              <div class="skill">JavaScript</div>
+              <div class="skill">HTML</div>
+              <div class="skill">CSS</div>
+              <div class="skill">Git</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </section>
+
+      <section id="projects">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+          <h3>Selected projects</h3>
+          <div class="filters" role="tablist" aria-label="Project filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="app">App</button>
+            <button class="filter-btn" data-filter="game">Game</button>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card" data-tags="web app" tabindex="0">
+            <div class="thumb" aria-hidden="true">
+              <svg width="100%" height="100%" viewBox="0 0 200 120" preserveAspectRatio="none"><rect width="200" height="120" rx="10" fill="#0b1220"/></svg>
+            </div>
+            <div style="flex:1">
+              <h3>Bank Management App</h3>
+              <p>Simple CRUD web application for managing bank accounts (student project).</p>
+              <div class="project-actions">
+                <a class="small-btn" href="https://github.com/Medoss22/ProjetE_C" target="_blank" rel="noopener">Code</a>
+                <button class="small-btn" data-details>Details</button>
+              </div>
+              <template class="project-detail">
+                <h4>Bank Management App</h4>
+                <p>A console-based banking app with account management, secure login for users/admins, and transaction features (deposit, withdraw, transfer). Data is stored in CSV files for persistence.</p>
+              </template>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-tags="web" tabindex="0">
+            <div class="thumb" aria-hidden="true">
+              <svg width="100%" height="100%" viewBox="0 0 200 120" preserveAspectRatio="none"><rect width="200" height="120" rx="10" fill="#071024"/></svg>
+            </div>
+            <div style="flex:1">
+              <h3>Study Hub</h3>
+              <p>A study resources platform with notes and links (school project).</p>
+              <div class="project-actions">
+                <a class="small-btn" href="https://github.com/Medoss22/Study_hub" target="_blank" rel="noopener">Code</a>
+                <button class="small-btn" data-details>Details</button>
+              </div>
+              <template class="project-detail">
+                <h4>Study Hub</h4>
+                <p>A console-based banking app with account management, secure login for users/admins, and transaction features (deposit, withdraw, transfer). Data is stored in CSV files for persistence.</p>
+              </template>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+         
+
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="card">
+          <h3>Contact</h3>
+          <form id="contact-form">
+            <input id="name" type="text" placeholder="Your name" required>
+            <input id="email" type="email" placeholder="Your email" required>
+            <textarea id="message" rows="4" placeholder="Message" required></textarea>
+            <div style="display:flex;gap:10px;align-items:center">
+              <button class="primary" type="submit">Send</button>
+              <div style="color:var(--muted);font-size:13px">Or email: <button id="copy-email-2" class="small-btn" type="button">Mohamed.Abdechchfik@emsi-edu.ma</button></div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>&copy; <span id="year"></span> Mohamed — Built with HTML/CSS/JS</div>
+    </footer>
+
+  </div>
+
+  <!-- Modal -->
+  <div id="modal-backdrop" class="modal-backdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button id="modal-close" class="small-btn" style="float:right">Close</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" style="display:none"></div>
+
+  <script>
+    // Utilities
+    const $ = sel => document.querySelector(sel);
+    const $$ = sel => Array.from(document.querySelectorAll(sel));
+
+    // Theme toggle
+    const themeBtn = document.getElementById('theme-toggle');
+    const root = document.documentElement;
+    function setTheme(t){
+      if(t === 'light') root.setAttribute('data-theme','light');
+      else root.removeAttribute('data-theme');
+      localStorage.setItem('theme', t);
+      themeBtn.setAttribute('aria-pressed', t === 'light');
+      themeBtn.textContent = t === 'light' ? '☀️' : '🌙';
+    }
+    // initial
+    (function initTheme(){
+      const saved = localStorage.getItem('theme');
+      if(saved) setTheme(saved);
+      else{
+        const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+        setTheme(prefersLight ? 'light' : 'dark');
+      }
+    })();
+    themeBtn.addEventListener('click', ()=>{
+      const current = root.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+      setTheme(current === 'light' ? 'dark' : 'light');
+    });
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const href = a.getAttribute('href');
+        if(href === '#') return;
+        e.preventDefault();
+        const el = document.querySelector(href);
+        if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+      });
+    });
+
+    // Project filters
+    const filterBtns = $$('.filter-btn');
+    const projectCards = $$('.project-card');
+    filterBtns.forEach(b => b.addEventListener('click', ()=>{
+      filterBtns.forEach(x => x.classList.remove('active'));
+      b.classList.add('active');
+      const f = b.dataset.filter;
+      projectCards.forEach(card =>{
+        const tags = (card.dataset.tags || '').split(' ').map(s=>s.trim()).filter(Boolean);
+        if(f === 'all' || tags.includes(f)) card.style.display = '';
+        else card.style.display = 'none';
+      });
+    }));
+
+    // Modal for project details
+    const modalBackdrop = $('#modal-backdrop');
+    const modalContent = $('#modal-content');
+    const modalClose = $('#modal-close');
+
+    function openModal(html){
+      modalContent.innerHTML = html;
+      modalBackdrop.style.display = 'flex';
+      modalBackdrop.setAttribute('aria-hidden','false');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal(){
+      modalBackdrop.style.display = 'none';
+      modalBackdrop.setAttribute('aria-hidden','true');
+      document.body.style.overflow = '';
+      modalContent.innerHTML = '';
+    }
+    modalClose.addEventListener('click', closeModal);
+    modalBackdrop.addEventListener('click', e => { if(e.target === modalBackdrop) closeModal(); });
+    document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal(); });
+
+    // Wire details buttons
+    $$('.project-card button[data-details]').forEach(btn => {
+      btn.addEventListener('click', ()=>{
+        const card = btn.closest('.project-card');
+        const tpl = card.querySelector('template.project-detail');
+        if(tpl){
+          openModal(tpl.innerHTML + '<p style="margin-top:12px;color:var(--muted)">Links: <a href="#">Live</a> • <a href="#">Code</a></p>');
+        }
+      });
+    });
+
+    // Contact form handling
+    const form = $('#contact-form');
+    form.addEventListener('submit', e =>{
+      e.preventDefault();
+      const name = $('#name').value.trim();
+      const email = $('#email').value.trim();
+      const msg = $('#message').value.trim();
+      if(!name || !email || !msg){ showToast('Please fill all fields'); return; }
+      if(!/^\S+@\S+\.\S+$/.test(email)){ showToast('Please enter a valid email'); return; }
+      // Mailto fallback
+      const subject = encodeURIComponent('Portfolio contact from ' + name);
+      const body = encodeURIComponent(msg + '\n\n— ' + name + ' (' + email + ')');
+      window.location.href = `mailto:your.email@example.com?subject=${subject}&body=${body}`;
+      showToast('Opening your email client...');
+    });
+
+    // Copy email buttons
+    function setupCopy(id, text){
+      const el = document.getElementById(id);
+      if(!el) return;
+      el.addEventListener('click', ()=>{
+        navigator.clipboard.writeText(text).then(()=>showToast('Email copied to clipboard'))
+        .catch(()=>showToast('Couldn\'t copy — select manually'));
+      });
+    }
+    setupCopy('copy-email','your.email@example.com');
+    setupCopy('copy-email-2','your.email@example.com');
+
+    // Download CV placeholder: you can replace href with a real file URL
+    document.getElementById('download-cv').addEventListener('click', ()=>{
+      showToast('Replace the Download CV button with a real file link (PDF) in the HTML)');
+    });
+
+    // Toast
+    const toast = $('#toast');
+    function showToast(msg, timeout=2400){
+      toast.textContent = msg; toast.style.display = 'block';
+      clearTimeout(toast._t);
+      toast._t = setTimeout(()=>{ toast.style.display = 'none'; }, timeout);
+    }
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Optional: prefill fields if you want
+    // document.getElementById('name').value = 'Mohamed';
+
+    document.getElementById("download-cv").addEventListener("click", function() {
+    window.open("CV/MyCv.pdf", "_blank"); 
+  });
+
+  </script>
+</body>
+</html>
